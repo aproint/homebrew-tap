@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - name: Check out tap
+        uses: actions/checkout@v7
+
+      - name: Tap repository
+        run: brew tap aproint/tap "$GITHUB_WORKSPACE"
+
+      - name: Audit formula
+        run: brew audit --strict --online aproint/tap/copilot-cli
+
+      - name: Install formula
+        run: brew install aproint/tap/copilot-cli
+
+      - name: Test formula
+        run: brew test aproint/tap/copilot-cli
