@@ -4,34 +4,33 @@
 class CopilotCli < Formula
   desc "APROINT Copilot CLI"
   homepage "https://github.com/aproint/copilot-cli"
-  version "1.0.0-rc.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/aproint/copilot-cli/releases/download/v1.0.0-rc.2/copilot-darwin-arm64",
+      url "https://github.com/aproint/copilot-cli/releases/download/v1.35.0/copilot-darwin-arm64",
           using: NoUnzipCurlDownloadStrategy
-      sha256 "855210ce8ab76c9a84cdee50a0b86036d51cd775cdd9615d1acfdb7f9a426737"
+      sha256 "eb8fd26c86759b014fc3bb45ef17e7fb1acee84c20c9a135d95cf9d547d90fe3"
     end
 
     on_intel do
-      url "https://github.com/aproint/copilot-cli/releases/download/v1.0.0-rc.2/copilot-darwin-amd64",
+      url "https://github.com/aproint/copilot-cli/releases/download/v1.35.0/copilot-darwin-amd64",
           using: NoUnzipCurlDownloadStrategy
-      sha256 "1dcb41869d0b6249d8c1dd056500b66ab2576fdcb4e142f02e137b5a4d7428c6"
+      sha256 "b8edf176aa65441573cf2741fe27cf6938de104ef4fda04b6786a241ebec019a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/aproint/copilot-cli/releases/download/v1.0.0-rc.2/copilot-linux-arm64",
+      url "https://github.com/aproint/copilot-cli/releases/download/v1.35.0/copilot-linux-arm64",
           using: NoUnzipCurlDownloadStrategy
-      sha256 "d2c96a14e48a1a4c66d49a8646088ee277709a941102616482bb730c1b718746"
+      sha256 "dd4fccc9cda938f06f6dcd754c8d4ed123bdba90626d40a4bf9584acd45c810e"
     end
 
     on_intel do
-      url "https://github.com/aproint/copilot-cli/releases/download/v1.0.0-rc.2/copilot-linux-amd64",
+      url "https://github.com/aproint/copilot-cli/releases/download/v1.35.0/copilot-linux-amd64",
           using: NoUnzipCurlDownloadStrategy
-      sha256 "f1e19f22896ba89699955b157ed11d15b6f6e054dfd050c0a2a0bf7d3334fa3d"
+      sha256 "8e38d970e7f2fb62f975ba3bde09fb28f38e20d29019e7a0588f314ff18032e9"
     end
   end
 
