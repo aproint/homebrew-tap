@@ -4,7 +4,6 @@
 class CopilotCli < Formula
   desc "APROINT Copilot CLI"
   homepage "https://github.com/aproint/copilot-cli"
-  version "1.35.0"
   license "Apache-2.0"
 
   on_macos do
